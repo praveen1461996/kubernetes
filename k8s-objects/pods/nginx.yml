@@ -4,10 +4,8 @@ metadata:
   name: nginx
 spec:
   hostNetwork: true 
-  contsiners:
-    - name: nginx 
-      image: nginx
-  ports:
-  - name: nginxport
-    port: 80
-    protocol: TCP      
+  containers:
+  - name: nginx 
+    image: nginx
+    ports:
+    - containerPort: 80
