@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rabbit-mq
+spec:
+  hostNetwork: true 
+  containers:
+  - name: rabbit-mq
+    image: dfe78d943fe3
+    ports:
+    - containerPort: 15671
