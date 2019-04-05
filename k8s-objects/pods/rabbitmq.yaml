@@ -6,6 +6,7 @@ spec:
   hostNetwork: true 
   containers:
   - name: rabbit-mq
-    image: rabbit-mq:latest
+    image: ursspraveenreddy/test08:latest
     ports:
     - containerPort: 15671
+      protocol: TCP
