@@ -5,9 +5,9 @@ metadata:
 spec:
   hostNetwork: true
   containers:
-    - name: tomcat
-      image:  tomcat
-  ports:
-  - name:  tomcatport
-    port:  8080
-    protocol: TCP
+  - name: tomcat
+    image:  tomcat
+    ports:
+    - name:  tomcatport
+      containerPort:  8080
+      protocol: TCP
