@@ -29,7 +29,7 @@ To start using your cluster, you need to run the following as a regular user:
 
 kubeadm join --token <token> <master-ip>:<master-port> --discovery-token-ca-cert-hash sha256:<hash>
 
-## which is resulted after kubectl init
+which is resulted after kubectl init
   
 
  recommended docs -  `https://kubernetes.io/docs/setup/independent/install-kubeadm/`
