@@ -15,14 +15,13 @@
 
 To start using your cluster, you need to run the following as a regular user:
 
-```mkdir -p $HOME/.kube
+`mkdir -p $HOME/.kube
    sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-   sudo chown $(id -u):$(id -g) $HOME/.kube/config```
+   sudo chown $(id -u):$(id -g) $HOME/.kube/config`
 
 ## for weave-net pod network 
 
 `kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"`
-
 
 ## on nodes
 
