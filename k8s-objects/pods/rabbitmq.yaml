@@ -9,4 +9,8 @@ spec:
     image: ursspraveenreddy/test08:latest
     ports:
     - containerPort: 15671
+<<<<<<< HEAD
       protocol: TCP
+=======
+      protocol: TCP
+>>>>>>> 59d133bfc39087b7eb79b276679062ea805f33ed
