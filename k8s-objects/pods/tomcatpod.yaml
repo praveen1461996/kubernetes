@@ -6,7 +6,7 @@ spec:
   hostNetwork: true
   containers:
     - name: tomcat
-      image:  tomcat:8
+      image:  tomcat
   ports:
   - name:  tomcatport
     port:  8080
