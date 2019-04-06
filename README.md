@@ -6,7 +6,7 @@
 
 ## kubeadm and docker installation required in both master and nodes
 
-`sh ./kubeadm.sh username(ubuntu)`
+`sh ./kubeadmin.sh username(ubuntu)`
 
 
 ## on master
