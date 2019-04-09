@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  my-deployment
+spec:
+  replicas: 1
+  minReadySeconds: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: tomcat
+  template:
+    metadata:
+      labels:
+        app: tomcat
+    spec:
+      hostNetwork: true
+      containers:
+      - name: my-app
+        #image: tomcat:8
+        image: tomcat:7
+        ports:
+        - containerPort: 8080
