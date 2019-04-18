@@ -23,8 +23,8 @@ To start using your cluster, you need to run the following as a regular user:
 
 `kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"`
 
-# Adding nodes to kubernetes master
-# on nodes
+## Adding nodes to kubernetes master
+## on nodes
 apply the join command in all the nodes,which is like `kubeadm join --token <token> <master-ip>:<master-port> --discovery-token-ca-cert-hash sha256:<hash>` resulted after kubeadm init in master
 
 
