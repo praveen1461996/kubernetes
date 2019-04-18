@@ -1,6 +1,6 @@
 # kubernetes
 
-## kubeadm installation master-node setup
+## kubeadm installation - master-node setup (ubuntu 16.04)
 
 ## kubeadm and docker installation required in both master and nodes
 
