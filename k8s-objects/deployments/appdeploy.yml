@@ -18,7 +18,6 @@ spec:
       labels:
         app: tomcat
     spec:
-      hostNetwork: true
       containers:
       - name: my-app
         #image: tomcat:8
